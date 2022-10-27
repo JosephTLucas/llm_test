@@ -1,13 +1,5 @@
 # llm_test
 
-
-██╗     ██╗     ███╗   ███╗    ████████╗███████╗███████╗████████╗
-██║     ██║     ████╗ ████║    ╚══██╔══╝██╔════╝██╔════╝╚══██╔══╝
-██║     ██║     ██╔████╔██║       ██║   █████╗  ███████╗   ██║   
-██║     ██║     ██║╚██╔╝██║       ██║   ██╔══╝  ╚════██║   ██║   
-███████╗███████╗██║ ╚═╝ ██║       ██║   ███████╗███████║   ██║   
-╚══════╝╚══════╝╚═╝     ╚═╝       ╚═╝   ╚══════╝╚══════╝   ╚═╝
-
 ## Purpose
 
 llm_test uses [pytest](https://docs.pytest.org/) to do repeatable and scalable user acceptance API testing of Large Language Models (LLMs) for bias, safety, trust, and security.
