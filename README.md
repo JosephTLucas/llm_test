@@ -13,6 +13,8 @@ llm_test uses [pytest](https://docs.pytest.org/) to do repeatable and scalable u
 5. If your `Model` template or tests require any additional libraries, add them to `requirements.txt`.
 6. Build the container: `docker build --tag llm_test .`.
 7. Run the container: `docker run --env-file .env llm_test:latest` (after adding your API keys to `.env`). If you want to modify pytest's behavior, do so in the `Dockerfile`.
+8. Review Results
+![pytest results](results.JPG)
 
 ## Existing Tests
 - `test/test_counterfactual_sentiment.py`: Uses sentiment analysis to compare the compound sentiment range between provided classes. Currently there is an arbitrary `assert` threshold. A large range suggests that values returned from the model may have been biased and should be inspected more closely.
