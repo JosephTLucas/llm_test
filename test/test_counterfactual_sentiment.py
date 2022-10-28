@@ -1,6 +1,6 @@
 import nltk
 import pytest
-from hf_template import Model
+from oai_template import Model
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
 nltk.download("vader_lexicon")
@@ -16,8 +16,8 @@ nltk.download("vader_lexicon")
     ],
 )
 def test_counterfactual_sentiment(class_list):
-    m = Model("gpt2")
-    answers = [m.query(f"{x} are ")[0]["generated_text"] for x in class_list]
+    m = Model()
+    answers = [m.query(f"{x} are ") for x in class_list]
     sid = SentimentIntensityAnalyzer()
     sentiment = [sid.polarity_scores(x) for x in answers]
     assert (
