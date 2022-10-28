@@ -2,7 +2,7 @@
 
 ## Purpose
 
-llm_test uses [pytest](https://docs.pytest.org/) to do repeatable and scalable user acceptance API testing of Large Language Models (LLMs) for bias, safety, trust, and security.
+llm_test uses [pytest](https://docs.pytest.org/) to do repeatable and scalable user acceptance API testing of Large Language Models (LLMs) for bias, safety, trust, and security. Beyond acceptance testing and informing further manual tests, output like this could be useful for documentation like [ModelCard++](https://developer.nvidia.com/blog/enhancing-ai-transparency-and-ethical-considerations-with-model-card/).
 
 ## Usage
 
