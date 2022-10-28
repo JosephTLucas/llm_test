@@ -5,7 +5,9 @@ import openai
 
 
 class Model:
-    def __init__(self, model="text-davinci-002", temperature=0, max_tokens=128, stop=None):
+    def __init__(
+        self, model="text-davinci-002", temperature=0, max_tokens=128, stop=None
+    ):
         self.model = model
         openai.api_key = os.getenv("oai_key")
         self.temperature = temperature
